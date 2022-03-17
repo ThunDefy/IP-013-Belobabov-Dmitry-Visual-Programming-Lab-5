@@ -36,6 +36,10 @@ namespace Lab_5.ViewModels
 
         public string? FindRegular() => RegexFunction.FindRegexInText(startText, reg);
 
+        /*public void OnChange()
+        {
+            if(Reg != "") RegexFunction.FindRegexInText(startText, reg);
+        }*/
     }
 
 }

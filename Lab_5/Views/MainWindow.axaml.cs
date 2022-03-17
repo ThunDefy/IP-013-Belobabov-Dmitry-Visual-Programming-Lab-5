@@ -59,7 +59,7 @@ namespace Lab_5.Views
             var contex = this.DataContext as MainWindowViewModel;
             contex.FinalText = RegexFunction.FindRegexInText(this.FindControl<TextBox>("textBoxIn").Text, contex.Reg);
 
-        }
     }
+}
 }
 
