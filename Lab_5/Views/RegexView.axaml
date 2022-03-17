@@ -1,0 +1,24 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="100"
+		Width ="550" Height ="100"
+        x:Class="Lab_5.Views.RegexView"
+        Title="Regex Window">
+
+
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+
+		<TextBox Name="textBoxInRegex"  Text="" FontSize="20" TextWrapping ="Wrap" AcceptsReturn="True" Grid.Row="0" Grid.Column="0"> </TextBox>
+
+		<Button  Name="Ok_bt"  Button.Click="IventOkPushed" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Grid.Row="1" Grid.Column="0">OK</Button>
+		<Button  Name="Cancel_bt" Button.Click="IventCloseRegexWindow" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Grid.Row="2" Grid.Column="0">Cancel</Button>
+
+	</Grid>
+</UserControl>
